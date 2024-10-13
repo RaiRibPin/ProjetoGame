@@ -45,7 +45,7 @@
 }
 
 body {
-    background-image: url(/imagens/Lava.png);
+    background-image: url('../Imagens/Lava.png');
 }
 
 .formulario {
