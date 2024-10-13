@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+body {
+    background-color: #DDD;
+}
+
+
+/* Menu início */
+
+#menu {
+    background-image: url('../Imagens/bgMenu.jpg');
+    font-size: 25px;
+    font-weight: 500;
+    font-family: 'Pixelify Sans';
+    display: flex;
+    justify-content: center;
+    box-shadow: 5px 3px 10px 5px rgba(0, 0, 0, 0.199);
+}
+
+#navtext {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#navtext a {
+    color: white;
+}
+
+#navtext a:hover {
+    transition: 0.3s;
+    color: rgb(255, 86, 114);
+}
+
+
+/* Menu fim */
+
+.principal {
+    width: 200px;
+    height: 200px;
+    border: 5px rgb(255, 86, 114) solid;
+    border-radius: 10px;
+}
+
+tr {
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-family: 'Pixelify Sans';
+    text-align: center;
+    color: navy;
+    margin: 20px 400px 20px 400px;
+    padding: 20px;
+    border: 5px rgb(255, 86, 114) solid;
+    border-radius: 50px;
+    background-color: white;
+}
+
+.opcoes {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    font-family: 'Pixelify Sans';
+    color: white;
+    border: navy 3px solid;
+    border-radius: 10px;
+    background-color: navy;
+    margin: 0 675px 15px 675px;
+}
+
+.sim {
+    margin-right: 15px;
+}
+
+marquee {
+    font-family: 'Pixelify Sans';
+    color: navy;
+}
+
+.botoes {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    font-family: 'Pixelify Sans';
+    margin: 20px 675px 20px 675px;
+}
