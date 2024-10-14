@@ -1,11 +1,297 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Quiz | GameDev</title>
+    <link href="../bootstrap-4.5.3-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <link href="../style/quizz.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+    </style>
 </head>
+
 <body>
-    
+    <div class="container-fluid" id="menu">
+        <div class="row">
+            <div class="col-12">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link"><img height="100px" class="img-fluid" width="100px" src="../Imagens/Logo Gamedev.png"></a>
+                    </li>
+                    <div id="navtext">
+                        <li class="nav-item">
+                            <a href="./quiz.html" class="nav-link">Quiz</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./adivinhaNum.html" class="nav-link">Adivinhação Números</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./adivinhaImg.html" class="nav-link">Adivinhação Imagens</a>
+                        </li>
+                        <li>
+                            <a href="./desenvolvedores.html" class="nav-link">Desenvolvedores</a>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container-quiz">
+        <h1>Quiz Minecraft</h1>
+    </div>
+    <script language="JavaScript">
+        var pergunta = [];
+
+        pergunta[0] = "Qual o material mais resistente do Minecraft?";
+        pergunta[1] = "Qual mob explode no Minecraft?";
+        pergunta[2] = "Quantos blocos de altura tem um jogador?";
+        pergunta[3] = "O que você obtém ao minerar Redstone?";
+        pergunta[4] = "Qual o nome do dragão no Minecraft?";
+        pergunta[5] = "Quantos corações um jogador tem no Minecraft?";
+        pergunta[6] = "Qual o nome do criador original do Minecraft?";
+        pergunta[7] = "Qual minério é necessário para construir um portal do Nether?";
+        pergunta[8] = "Em que ano o Minecraft foi lançado?";
+        pergunta[9] = "Qual item é necessário para derrotar o Ender Dragon?";
+        pergunta[10] = "Quantos tipos de madeira existem no Minecraft?";
+        pergunta[11] = "Qual mob pode ser domesticado?";
+        pergunta[12] = "Qual é a altura máxima no Minecraft ?";
+        pergunta[13] = "Qual é o modo mais difícil do jogo?";
+        pergunta[14] = "Qual o nome do bioma mais comum no Minecraft?";
+        pergunta[15] = "Qual mob pode ser encontrado no Nether?";
+        pergunta[16] = "Qual mob voa no jogo?";
+        pergunta[17] = "Qual animal no Minecraft pode ser atraído com cenouras e pode ser montado com uma sela?";
+        pergunta[18] = "Qual item é necessário para encantar itens?";
+        pergunta[19] = "Qual mob te ataca quando você olha diretamente para ele?";
+
+
+
+        document.write('<ol class="formulario">');
+        document.write('<li>' + pergunta[0] + '</li>');
+
+        document.write('<form name="formQuizz"> ');
+
+        document.write('<INPUT TYPE="RADIO" NAME="r0" VALUE="Madeira">Madeira </br>');
+        document.write('<INPUT TYPE="RADIO" NAME="r0" VALUE="Pedra">Pedra </br>');
+        document.write('<INPUT TYPE="RADIO" NAME="r0" VALUE="Diamante">Diamante </br>');
+        document.write('<INPUT TYPE="RADIO" NAME="r0" VALUE="Netherita">Netherita <p>');
+
+        document.write('<li>' + pergunta[1] + '</li>');
+        document.write('<INPUT TYPE="RADIO" NAME="r1" VALUE="Zumbi">Zumbi</br>');
+        document.write('<INPUT TYPE="RADIO" NAME="r1" VALUE="Esqueleto">Esqueleto</br>');
+        document.write('<INPUT TYPE="RADIO" NAME="r1" VALUE="Creeper">Creeper</br>');
+        document.write('<INPUT TYPE="RADIO" NAME="r1" VALUE="Enderman">Enderman<p>');
+
+        document.write('<li>' + pergunta[2] + '</li>');
+        document.write('<INPUT TYPE="RADIO" NAME="r2" VALUE="1 bloco">1 bloco</br>');
+        document.write('<INPUT TYPE="RADIO" NAME="r2" VALUE="1,5 blocos">1,5 blocos</br>');
+        document.write('<INPUT TYPE="RADIO" NAME="r2" VALUE="2 blocos">2 blocos</br>');
+        document.write('<INPUT TYPE="RADIO" NAME="r2" VALUE="2,5 blocos">2,5 blocos<p>');
+
+        document.write('<li>' + pergunta[3] + '</li>');
+        document.write('<INPUT TYPE="RADIO" NAME="r3" VALUE="Pó de Redstone">Pó de Redstone</br>');
+        document.write('<INPUT TYPE="RADIO" NAME="r3" VALUE="Barra de Ferro">Barra de Ferro</br>');
+        document.write('<INPUT TYPE="RADIO" NAME="r3" VALUE="Lápis Lazuli">Lápis Lazuli</br>');
+        document.write('<INPUT TYPE="RADIO" NAME="r3" VALUE="Pedra lisa">Pedra lisa<p>');
+
+        document.write('<li>' + pergunta[4] + '</li>');
+        document.write('<INPUT TYPE="RADIO" NAME="r4" VALUE="Dragão infernal">Dragão infernal</br>');
+        document.write('<INPUT TYPE="RADIO" NAME="r4" VALUE="Dragão do End">Dragão do End</br>');
+        document.write('<INPUT TYPE="RADIO" NAME="r4" VALUE="Dragão da Noite">Dragão da Noite</br>');
+        document.write('<INPUT TYPE="RADIO" NAME="r4" VALUE="Dragão do Nether">Dragão do Nether<p>');
+
+        document.write('<li>' + pergunta[5] + '</li>');
+        document.write('<INPUT TYPE="RADIO" NAME="r5" VALUE="5">5</br>');
+        document.write('<INPUT TYPE="RADIO" NAME="r5" VALUE="10">10</br>');
+        document.write('<INPUT TYPE="RADIO" NAME="r5" VALUE="20">20</br>');
+        document.write('<INPUT TYPE="RADIO" NAME="r5" VALUE="30">30<p>');
+
+        document.write('<li>' + pergunta[6] + '</li>');
+        document.write('<INPUT TYPE="RADIO" NAME="r6" VALUE="Bill gates">Bill gates</br>');
+        document.write('<INPUT TYPE="RADIO" NAME="r6" VALUE="Notch">Notch</br>');
+        document.write('<INPUT TYPE="RADIO" NAME="r6" VALUE="Elon Musk">Elon Musk</br>');
+        document.write('<INPUT TYPE="RADIO" NAME="r6" VALUE="Steve Jobs">Steve Jobs<p>');
+
+        document.write('<li>' + pergunta[7] + '</li>');
+        document.write('<INPUT TYPE="RADIO" NAME="r7" VALUE="Diamante">Diamante</br>');
+        document.write('<INPUT TYPE="RADIO" NAME="r7" VALUE="Esmeralda">Esmeralda</br>');
+        document.write('<INPUT TYPE="RADIO" NAME="r7" VALUE="Ouro">Ouro</br>');
+        document.write('<INPUT TYPE="RADIO" NAME="r7" VALUE="Obsidiana">Obsidiana<p>');
+
+        document.write('<li>' + pergunta[8] + '</li>');
+        document.write('<INPUT TYPE="RADIO" NAME="r8" VALUE="2007">2007</br>');
+        document.write('<INPUT TYPE="RADIO" NAME="r8" VALUE="2009">2009</br>');
+        document.write('<INPUT TYPE="RADIO" NAME="r8" VALUE="2011">2011</br>');
+        document.write('<INPUT TYPE="RADIO" NAME="r8" VALUE="2013">2013<p>');
+
+        document.write('<li>' + pergunta[9] + '</li>');
+        document.write('<INPUT TYPE="RADIO" NAME="r9" VALUE="Poção de Invisibilidade">Poção de Invisibilidade</br>');
+        document.write('<INPUT TYPE="RADIO" NAME="r9" VALUE="Elmo de Ouro">Elmo de Ouro</br>');
+        document.write('<INPUT TYPE="RADIO" NAME="r9" VALUE="Olho de Ender">Olho de Ender</br>');
+        document.write('<INPUT TYPE="RADIO" NAME="r9" VALUE="Cristais de End">Cristais de End<p>');
+
+        document.write('<li>' + pergunta[10] + '</li>');
+        document.write('<INPUT TYPE="RADIO" NAME="r10" VALUE="3">3</br>');
+        document.write('<INPUT TYPE="RADIO" NAME="r10" VALUE="5">5</br>');
+        document.write('<INPUT TYPE="RADIO" NAME="r10" VALUE="6">6</br>');
+        document.write('<INPUT TYPE="RADIO" NAME="r10" VALUE="8">8<p>');
+
+        document.write('<li>' + pergunta[11] + '</li>');
+        document.write('<INPUT TYPE="RADIO" NAME="r11" VALUE="Creeper">Creeper</br>');
+        document.write('<INPUT TYPE="RADIO" NAME="r11" VALUE="Esqueleto">Esqueleto</br>');
+        document.write('<INPUT TYPE="RADIO" NAME="r11" VALUE="Lobo">Lobo</br>');
+        document.write('<INPUT TYPE="RADIO" NAME="r11" VALUE="Enderman">Enderman<p>');
+
+        document.write('<li>' + pergunta[12] + '</li>');
+        document.write('<INPUT TYPE="RADIO" NAME="r12" VALUE="128 blocos">128 blocos</br>');
+        document.write('<INPUT TYPE="RADIO" NAME="r12" VALUE="256 blocos">256 blocos</br>');
+        document.write('<INPUT TYPE="RADIO" NAME="r12" VALUE="320 blocos"> 320 blocos</br>');
+        document.write('<INPUT TYPE="RADIO" NAME="r12" VALUE="384 blocos ">384 blocos<p>');
+
+        document.write('<li>' + pergunta[13] + '</li>');
+        document.write('<INPUT TYPE="RADIO" NAME="r13" VALUE="Sobrevivência">Sobrevivência</br>');
+        document.write('<INPUT TYPE="RADIO" NAME="r13" VALUE="Aventura">Aventura</br>');
+        document.write('<INPUT TYPE="RADIO" NAME="r13" VALUE="Espectador">Espectador</br>');
+        document.write('<INPUT TYPE="RADIO" NAME="r13" VALUE="Hardcore">Hardcore<p>');
+
+        document.write('<li>' + pergunta[14] + '</li>');
+        document.write('<INPUT TYPE="RADIO" NAME="r14" VALUE="Deserto">Deserto</br>');
+        document.write('<INPUT TYPE="RADIO" NAME="r14" VALUE="Floresta">Floresta</br>');
+        document.write('<INPUT TYPE="RADIO" NAME="r14" VALUE="Planícies">Planícies</br>');
+        document.write('<INPUT TYPE="RADIO" NAME="r14" VALUE="Pântano">Pântano<p>');
+
+        document.write('<li>' + pergunta[15] + '</li>');
+        document.write('<INPUT TYPE="RADIO" NAME="r15" VALUE="Enderman">Enderman</br>');
+        document.write('<INPUT TYPE="RADIO" NAME="r15" VALUE="Zumbi">Zumbi</br>');
+        document.write('<INPUT TYPE="RADIO" NAME="r15" VALUE="Ghast">Ghast</br>');
+        document.write('<INPUT TYPE="RADIO" NAME="r15" VALUE="Esqueleto">Esqueleto<p>');
+
+        document.write('<li>' + pergunta[16] + '</li>');
+        document.write('<INPUT TYPE="RADIO" NAME="r16" VALUE="Phatom">Phantom</br>');
+        document.write('<INPUT TYPE="RADIO" NAME="r16" VALUE="Ovelha">Ovelha</br>');
+        document.write('<INPUT TYPE="RADIO" NAME="r16" VALUE="Aldeão">Aldeão</br>');
+        document.write('<INPUT TYPE="RADIO" NAME="r16" VALUE="Creeper">Creeper<p>');
+
+        document.write('<li>' + pergunta[17] + '</li>');
+        document.write('<INPUT TYPE="RADIO" NAME="r17" VALUE="Cavalo">Cavalo</br>');
+        document.write('<INPUT TYPE="RADIO" NAME="r17" VALUE="Porco">Porco</br>');
+        document.write('<INPUT TYPE="RADIO" NAME="r17" VALUE="Lhama">Lhama</br>');
+        document.write('<INPUT TYPE="RADIO" NAME="r17" VALUE="Ovelha">Ovelha <p>');
+
+        document.write('<li>' + pergunta[18] + '</li>');
+        document.write('<INPUT TYPE="RADIO" NAME="r18" VALUE="Bloco de Diamante">Bloco de Diamante</br>');
+        document.write('<INPUT TYPE="RADIO" NAME="r18" VALUE="Mesa de Encantamento">Mesa de Encantamento</br>');
+        document.write('<INPUT TYPE="RADIO" NAME="r18" VALUE="End Portal">End Portal</br>');
+        document.write('<INPUT TYPE="RADIO" NAME="r18" VALUE="Bigorna">Bigorna<p>');
+
+        document.write('<li>' + pergunta[19] + '</li>');
+        document.write('<INPUT TYPE="RADIO" NAME="r19" VALUE="Enderman">Enderman</br>');
+        document.write('<INPUT TYPE="RADIO" NAME="r19" VALUE="Zumbi">Zumbi</br>');
+        document.write('<INPUT TYPE="RADIO" NAME="r19" VALUE="Esqueleto">Esqueleto</br>');
+        document.write('<INPUT TYPE="RADIO" NAME="r19" VALUE="Aranha">Aranha<p>');
+
+        document.write('</ol> ');
+
+        document.write('<input type="button" name="verifica" class="btn" value="Ver o Resultado" onclick="respostas()">');
+        document.write('<input type="reset" name="limpar" class="btn"  value="Limpar">');
+        document.write('</form> ');
+    </script>
+    <script>
+        function respostas() {
+
+            var acertos = 0;
+            var resp0 = document.formQuizz.r0.value;
+            var resp1 = document.formQuizz.r1.value;
+            var resp2 = document.formQuizz.r2.value;
+            var resp3 = document.formQuizz.r3.value;
+            var resp4 = document.formQuizz.r4.value;
+            var resp5 = document.formQuizz.r5.value;
+            var resp6 = document.formQuizz.r6.value;
+            var resp7 = document.formQuizz.r7.value;
+            var resp8 = document.formQuizz.r8.value;
+            var resp9 = document.formQuizz.r9.value;
+            var resp10 = document.formQuizz.r10.value;
+            var resp11 = document.formQuizz.r11.value;
+            var resp12 = document.formQuizz.r12.value;
+            var resp13 = document.formQuizz.r13.value;
+            var resp14 = document.formQuizz.r14.value;
+            var resp15 = document.formQuizz.r15.value;
+            var resp16 = document.formQuizz.r16.value;
+            var resp17 = document.formQuizz.r17.value;
+            var resp18 = document.formQuizz.r18.value;
+            var resp19 = document.formQuizz.r19.value;
+            var resposta = [];
+            var result = "";
+            resposta[0] = "Netherita";
+            resposta[1] = "Creeper";
+            resposta[2] = "2 blocos";
+            resposta[3] = "Pó de Redstone";
+            resposta[4] = "Dragão do End";
+            resposta[5] = "10";
+            resposta[6] = "Notch";
+            resposta[7] = "Obsidiana";
+            resposta[8] = "2011";
+            resposta[9] = "Olho de Ender";
+            resposta[10] = "6";
+            resposta[11] = "Lobo";
+            resposta[12] = "320 blocos";
+            resposta[13] = "Hardcore";
+            resposta[14] = "Planícies";
+            resposta[15] = "Ghast";
+            resposta[16] = "Phantom";
+            resposta[17] = "Porco";
+            resposta[18] = "Mesa de Encantamento";
+            resposta[19] = "Enderman";
+
+
+            if (resp0 == resposta[0]) acertos = acertos + 1;
+            if (resp1 == resposta[1]) acertos = acertos + 1;
+            if (resp2 == resposta[2]) acertos = acertos + 1;
+            if (resp3 == resposta[3]) acertos = acertos + 1;
+            if (resp4 == resposta[4]) acertos = acertos + 1;
+            if (resp5 == resposta[5]) acertos = acertos + 1;
+            if (resp6 == resposta[6]) acertos = acertos + 1;
+            if (resp7 == resposta[7]) acertos = acertos + 1;
+            if (resp8 == resposta[8]) acertos = acertos + 1;
+            if (resp9 == resposta[9]) acertos = acertos + 1;
+            if (resp10 == resposta[10]) acertos = acertos + 1;
+            if (resp11 == resposta[11]) acertos = acertos + 1;
+            if (resp12 == resposta[12]) acertos = acertos + 1;
+            if (resp13 == resposta[13]) acertos = acertos + 1;
+            if (resp14 == resposta[14]) acertos = acertos + 1;
+            if (resp15 == resposta[15]) acertos = acertos + 1;
+            if (resp16 == resposta[16]) acertos = acertos + 1;
+            if (resp17 == resposta[17]) acertos = acertos + 1;
+            if (resp18 == resposta[18]) acertos = acertos + 1;
+            if (resp19 == resposta[19]) acertos = acertos + 1;
+            if (acertos != 0) {
+                erros = 19 - acertos;
+                porcentagem = (acertos / 19) * 100;
+                alert('Total de Acertos =' + acertos + ' com um total de ' + Math.round(porcentagem) + ' %  e errou ' + erros + ' questão(ões)');
+                if (Math.round(porcentagem) <= 31) alert('Puts, somente ' + Math.round(porcentagem) + ' % ');
+                else if (Math.round(porcentagem) < 50) alert('Por pouco você não chegou a 50%, pois acertou somente ' + Math.round(porcentagem) + ' % ');
+                else if (Math.round(porcentagem) <= 69) alert('Fez uma média razoável, entre 50% e 69%, pois acertou ' + Math.round(porcentagem) + ' % ');
+                else if (Math.round(porcentagem) <= 79) alert('Está bem, ficou entre 50% e 79%, pois acertou ' + Math.round(porcentagem) + ' % ');
+                else if (Math.round(porcentagem) <= 89) alert('Está melhorando, pois ficou entre 80% e 89% e acertou ' + Math.round(porcentagem) + ' % ');
+                else if (Math.round(porcentagem) <= 95) alert('Ótimo, ficou entre 90% e 95%, pois acertou ' + Math.round(porcentagem) + ' % ');
+                else alert('Excelente, você é realmente um Gamer, pois acertou ' + Math.round(porcentagem) + ' % ');
+
+
+
+            } else alert('Você não escolheu nenhuma alternativa! Ou errou todas!');
+
+
+
+
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="../bootstrap-4.5.3-dist/js/bootstrap.min.js"></script>
 </body>
+
 </html>
