@@ -14,31 +14,37 @@
 </head>
 
 <body>
-    <div class="container-fluid" id="menu">
-        <div class="row">
-            <div class="col-12">
-                <ul class="nav">
-                    <li class="nav-item">
-                        <a href="index.html" class="nav-link"><img height="100px" class="img-fluid" width="100px" src="../Imagens/Logo Gamedev.png"></a>
-                    </li>
-                    <div id="navtext">
-                        <li class="nav-item">
-                            <a href="./quiz.html" class="nav-link">Quiz</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="./adivinhaNum.html" class="nav-link">Adivinhação Números</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="./adivinhaImg.html" class="nav-link">Adivinhação Imagens</a>
-                        </li>
-                        <li>
-                            <a href="./desenvolvedores.html" class="nav-link">Desenvolvedores</a>
-                        </li>
-                    </div>
-                </ul>
-            </div>
-        </div>
+    <div>
+        <nav class="navbar navbar-expand-lg navbar-primary bg-trasnparent">
+          <a class="navbar-brand" href="index.html"><img src="/Imagens/Logo Gamedev v2.png" width="80px" height="80px"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon" id="icon-menu">Menu</span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home <span class="sr-only"></span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="quiz.html">Quiz</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="desenvolvedores.html">Desenvolvedores</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Jogos
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="adivinhaImg.html">Adivinha Imagens</a>
+                  <a class="dropdown-item" href="adivinhaNum.html">Adivinha Número</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
     </div>
+
     <section class="secaoUm">
         <h2>Explore nosso conteúdo</h2>
         <div class="container-fluid">

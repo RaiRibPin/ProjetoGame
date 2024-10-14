@@ -6,7 +6,7 @@ body {
 
 /* Menu início */
 
-#menu {
+div nav {
     background-image: url('../Imagens/bgMenu.jpg');
     font-size: 25px;
     font-weight: 500;
@@ -14,6 +14,10 @@ body {
     display: flex;
     justify-content: center;
     box-shadow: 5px 3px 10px 5px rgba(0, 0, 0, 0.199);
+}
+
+#icon-menu {
+    color: #007bff;
 }
 
 #navtext {
