@@ -26,13 +26,9 @@ div nav {
     align-items: center;
 }
 
-#navtext a {
-    color: white;
-}
-
-#navtext a:hover {
-    transition: 0.3s;
+.nav-link:hover {
     color: rgb(255, 86, 114);
+    transition: 0.3s;
 }
 
 

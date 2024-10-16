@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
 body {
-    background-color: #DDD;
+    background-image: url('../Imagens/videogamebg.jpg');
+    background-size: cover;
 }
 
 div nav {
@@ -10,9 +11,69 @@ div nav {
     font-family: 'Pixelify Sans';
     display: flex;
     justify-content: center;
-    box-shadow: 5px 3px 10px 5px rgba(0, 0, 0, 0.199);
+    box-shadow: 5px 3px 10px 5px rgba(0, 0, 0, 0.256);
+}
+
+.nav-link:hover {
+    color: rgb(255, 86, 114);
+    transition: 0.3s;
 }
 
 #icon-menu {
     color: #007bff;
+}
+
+h1 {
+    font-family: 'Pixelify Sans';
+    margin-top: 30px;
+    font-size: 38px;
+}
+
+.img-fluid {
+    display: flex;
+    align-content: space-between;
+    border-radius: 20px;
+}
+
+.azul {
+    border: 5px #0043a7 solid;
+}
+
+.rosa {
+    border: 5px #ff477e solid;
+}
+
+.sim {
+    margin-right: 15px;
+}
+
+marquee {
+    font-family: 'Pixelify Sans';
+    color: navy;
+    margin: 0px 250px 0px 250px;
+}
+
+.opcoes {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    font-family: 'Pixelify Sans';
+    color: white;
+    border: navy 3px solid;
+    border-radius: 10px;
+    background-color: navy;
+    margin: 20px 675px 15px 675px;
+}
+
+.botoes {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    font-family: 'Pixelify Sans';
+    margin: 20px 675px 20px 675px;
+}
+
+input:hover {
+    background-color: rgb(124, 124, 255);
+    transition: 0.3s;
 }

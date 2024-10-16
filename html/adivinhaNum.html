@@ -16,7 +16,7 @@
 <body>
     <div>
         <nav class="navbar navbar-expand-lg navbar-primary bg-trasnparent">
-            <a class="navbar-brand" href="index.html"><img src="/Imagens/Logo Gamedev v2.png" width="80px" height="80px"></a>
+            <a class="navbar-brand" href="index.html"><img src="../Imagens/Logo Gamedev v2.png" width="80px" height="80px"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon" id="icon-menu">Menu</span>
           </button>
@@ -45,9 +45,112 @@
         </nav>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="../bootstrap-4.5.3-dist/js/bootstrap.min.js"></script>
+    <section>
+
+        <script language="Javascript">
+            alert('Pense num número de 1 até 31');
+            alert('Não conte e nem fale, pois vou adivinhar !!!!');
+            alert('Só errarei se você não identificar corretamente\n as cartas em que estão o número  que você pensou !!!');
+            alert('Então preste muita atenção ao escolher as cartas !!!');
+            document.write('<center> <h1> Jogo da Adivinhação - Escolha um número de 1 até 31</h1>');
+            document.write('<form name="formAdivinha" method="get"> ');
+
+            document.write('<marquee behavior="alternate"><h2> Escolha abaixo as cartas em que seu número aparece.</h2></marquee>');
+            document.write('<img class="img-fluid azul" src="../Imagens/carta1.png" />  ');
+            document.write('<div class="opcoes">');
+            document.write('<div class="sim">');
+            document.write('<INPUT TYPE="radio" NAME="op1" VALUE="Sim">Sim ');
+            document.write('</div>');
+            document.write('<INPUT TYPE="radio" NAME="op1" VALUE="Não" checked>Não');
+            document.write('</div>');
+            document.write('<img img class="img-fluid rosa" src="../Imagens/carta2.png" /> ');
+            document.write('<div class="opcoes">');
+            document.write('<div class="sim">');
+            document.write('<INPUT TYPE="radio" NAME="op2" VALUE="Sim">Sim');
+            document.write('</div>');
+            document.write('<INPUT TYPE="radio" NAME="op2" VALUE="Não" checked>Não');
+            document.write('</div>');
+            document.write('<img img class="img-fluid azul" src="../Imagens/carta3.png" />  ');
+            document.write('<div class="opcoes">');
+            document.write('<div class="sim">');
+            document.write('<INPUT TYPE="radio" NAME="op3" VALUE="Sim">Sim');
+            document.write('</div>');
+            document.write('<INPUT TYPE="radio" NAME="op3" VALUE="Não" checked>Não');
+            document.write('</div>');
+            document.write('<img img class="img-fluid rosa" src="../Imagens/carta4.png" />  ');
+            document.write('<div class="opcoes">');
+            document.write('<div class="sim">');
+            document.write('<INPUT TYPE="radio" NAME="op4" VALUE="Sim">Sim');
+            document.write('</div>');
+            document.write('<INPUT TYPE="radio" NAME="op4" VALUE="Não" checked>Não');
+            document.write('</div>');
+            document.write('<img img class="img-fluid azul" src="../Imagens/carta5.png" /> ');
+            document.write('<div class="opcoes">');
+            document.write('<div class="sim">');
+            document.write('<INPUT TYPE="radio" NAME="op5" VALUE="Sim">Sim');
+            document.write('</div>');
+            document.write('<INPUT TYPE="radio" NAME="op5" VALUE="Não" checked>Não');
+            document.write('</div>');
+            document.write('<div class="botoes">');
+            document.write('<input type="button" name="verifica" value="Ver o Resultado" onclick="respostas()">');
+            document.write('<input type="reset" name="limpar" value="Limpar Respostas" >');
+            document.write('</div>');
+            document.write('</form> </center>');
+        </script>
+        <script>
+            function respostas() {
+
+                var acertos = 0;
+
+                var resp1 = document.formAdivinha.op1.value;
+                var resp2 = document.formAdivinha.op2.value;
+                var resp3 = document.formAdivinha.op3.value;
+                var resp4 = document.formAdivinha.op4.value;
+                var resp5 = document.formAdivinha.op5.value;
+
+
+
+                //alert('resposta 1 '+resp1); alert('resposta 2 '+resp2); alert('resposta 3 '+resp3); alert('resposta 4 '+resp4);alert('resposta 5 '+resp5);
+
+
+
+
+                if (resp1 == "Sim") acertos = acertos + 1;
+                if (resp2 == "Sim") acertos = acertos + 2;
+                if (resp3 == "Sim") acertos = acertos + 4;
+                if (resp4 == "Sim") acertos = acertos + 8;
+                if (resp5 == "Sim") acertos = acertos + 16;
+
+
+                if (acertos > 0) {
+                    //alert('Acertos ='+acertos);
+                    document.write('<div style="background-image: url(../Imagens/videogamebg.jpg)">');
+                    document.write('<center><h2>O número que você pensou foi: ' + acertos + '</h2><br />');
+
+
+                    document.write('<br /><br />');
+                    document.write('<img src="../Imagens/adivinhador.jpg" width="300" height="300" /> ');
+                    document.write('<br /><br /><a href=""><h3>Tentar Novamente!!!</h3></a>');
+
+                    document.write('</center> </div>');
+
+
+
+                } else alert('Você não escolheu nenhuma carta');
+
+
+
+
+
+
+
+
+            }
+        </script>
+
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="../bootstrap-4.5.3-dist/js/bootstrap.min.js"></script>
 </body>
 
 </html>
