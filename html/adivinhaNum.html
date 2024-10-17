@@ -109,12 +109,6 @@
                 var resp5 = document.formAdivinha.op5.value;
 
 
-
-                //alert('resposta 1 '+resp1); alert('resposta 2 '+resp2); alert('resposta 3 '+resp3); alert('resposta 4 '+resp4);alert('resposta 5 '+resp5);
-
-
-
-
                 if (resp1 == "Sim") acertos = acertos + 1;
                 if (resp2 == "Sim") acertos = acertos + 2;
                 if (resp3 == "Sim") acertos = acertos + 4;
@@ -123,14 +117,11 @@
 
 
                 if (acertos > 0) {
-                    //alert('Acertos ='+acertos);
-                    document.write('<div style="background-image: url(../Imagens/videogamebg.jpg)">');
-                    document.write('<center><h2>O número que você pensou foi: ' + acertos + '</h2><br />');
+                    document.write('<div style="background-color: #0077ff">');
+                    document.write('<center><h2 style="padding-top:30px;font-size: 40px; color:navy">O número que você pensou foi: ' + acertos + '</h2><br />');
 
-
-                    document.write('<br /><br />');
-                    document.write('<img src="../Imagens/adivinhador.jpg" width="300" height="300" /> ');
-                    document.write('<br /><br /><a href=""><h3>Tentar Novamente!!!</h3></a>');
+                    document.write('<img style="border: 5px navy solid; border-radius: 10px" src="../Imagens/adivinhador.jpg" width="600" height="600" /> ');
+                    document.write('<br /><br /><a href=""><h3 style="color: #ff477e">Tentar Novamente!!!</h3></a>');
 
                     document.write('</center> </div>');
 
