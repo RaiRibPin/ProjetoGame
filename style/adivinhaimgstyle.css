@@ -41,6 +41,7 @@ div nav {
     border-radius: 10px;
 }
 
+
 tr {
     display: flex;
     justify-items: center;
@@ -51,7 +52,7 @@ h1 {
     font-family: 'Pixelify Sans';
     text-align: center;
     color: navy;
-    margin: 20px 400px 20px 400px;
+    margin: 20px auto;
     padding: 20px;
     border: 5px rgb(255, 86, 114) solid;
     border-radius: 50px;
@@ -59,32 +60,17 @@ h1 {
 }
 
 .opcoes {
-    display: flex;
-    justify-content: center;
     font-size: 25px;
     font-family: 'Pixelify Sans';
     color: white;
     border: navy 3px solid;
     border-radius: 10px;
     background-color: navy;
-    margin: 0 675px 15px 675px;
-}
-
-.sim {
-    margin-right: 15px;
 }
 
 marquee {
     font-family: 'Pixelify Sans';
     color: navy;
-}
-
-.botoes {
-    display: flex;
-    justify-content: center;
-    font-size: 25px;
-    font-family: 'Pixelify Sans';
-    margin: 20px 675px 20px 675px;
 }
 
 input:hover {
