@@ -41,7 +41,6 @@ div nav {
     border-radius: 10px;
 }
 
-
 tr {
     display: flex;
     justify-items: center;
@@ -62,10 +61,12 @@ h1 {
 .opcoes {
     font-size: 25px;
     font-family: 'Pixelify Sans';
-    color: white;
-    border: navy 3px solid;
-    border-radius: 10px;
-    background-color: navy;
+    color: navy;
+    margin-bottom: 20px;
+}
+
+.sim {
+    margin-right: 10px;
 }
 
 marquee {
@@ -76,4 +77,10 @@ marquee {
 input:hover {
     background-color: rgb(124, 124, 255);
     transition: 0.3s;
+}
+
+.botoes {
+    font-family: 'Pixelify Sans';
+    color: navy;
+    margin-bottom: 20px;
 }
